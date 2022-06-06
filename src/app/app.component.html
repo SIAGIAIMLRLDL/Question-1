@@ -1,0 +1,59 @@
+<style>
+body { margin: 0;}
+* { box-sizing: border-box; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+Table { border-collapse: collapse; margin: 0; }
+td    { border: 1px solid black; }
+
+table tr td:nth-child(1) { 
+  width: 200px; 
+  height: calc(100vh - 20px); 
+  vertical-align: top;
+  text-align: left;
+}
+
+table tr td:nth-child(2) { 
+  width: calc(100vw - 500px); 
+  height: calc(100vh - 20px);
+  vertical-align: top;
+  text-align: left;
+}
+
+table tr td:nth-child(3) { 
+  width: 300px; 
+  height: calc(100vh - 20px); 
+  vertical-align: top;
+  text-align: left;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <td>
+        <input type="number">
+      </td>
+      <td>
+        <select>
+          <option value="isPrime">isPrime</option>
+          <option value="isFibonacci">isFibonacci</option>
+        </select>
+      </td>
+      <td>C</td>
+    </tr>
+  </thead>
+</table>
+
+<router-outlet></router-outlet>
